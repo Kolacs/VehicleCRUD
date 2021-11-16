@@ -144,7 +144,7 @@ namespace PresentationLayer
 
         private void CreateBtn_Clicked(object obj)
         {
-            if (SelectedVehicle != null)
+            if (NewRegId != null)
             {
                 if (Regex.IsMatch(NewRegId, "^[A-Za-z]{3,3}[0-9]{3,3}$"))
                 {
