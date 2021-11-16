@@ -144,23 +144,30 @@ namespace PresentationLayer
 
         private void CreateBtn_Clicked(object obj)
         {
-            if (Regex.IsMatch(NewRegId, "^[A-Za-z]{3,3}[0-9]{3,3}$"))
-            { 
-                Vehicle.RegistrationId = NewRegId;
-                Vehicle.TypeId = SelectedType.TypeId;
-                Vehicle.MakeId = SelectedMake.MakeId;
-                Vehicle.Description = Description;
-                controller.CreateVehicle(Vehicle);
-                VehicleList = new ObservableCollection<Vehicle>(controller.GetAllVehicles());
-                NewRegId = "";
-                NewTypeId = "";
-                NewMakeId = "";
-                Description = "";
-                SetTime();
+            if (SelectedVehicle != null)
+            {
+                if (Regex.IsMatch(NewRegId, "^[A-Za-z]{3,3}[0-9]{3,3}$"))
+                {
+                    Vehicle.RegistrationId = NewRegId;
+                    Vehicle.TypeId = SelectedType.TypeId;
+                    Vehicle.MakeId = SelectedMake.MakeId;
+                    Vehicle.Description = Description;
+                    controller.CreateVehicle(Vehicle);
+                    VehicleList = new ObservableCollection<Vehicle>(controller.GetAllVehicles());
+                    NewRegId = "";
+                    NewTypeId = "";
+                    NewMakeId = "";
+                    Description = "";
+                    SetTime();
+                }
+                else
+                {
+                    MessageBox.Show("Format for Registration nummber is [AAA111]", "Error");
+                }
             }
             else
             {
-                MessageBox.Show("Format for Registration nummber is [AAA111]", "Error");
+                MessageBox.Show("Registration number is needed.", "Error");
             }
 
         }
