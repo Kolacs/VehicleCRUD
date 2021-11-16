@@ -11,12 +11,6 @@ namespace DataLayer
         public DbSet<VehicleMake> VehicleMakes { get; set; }
         public DbSet<VehicleType> VehicleTypes { get; set; }
 
-        public VehicleContext()
-        {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
-        }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=VehicleDatabase;Integrated Security=True;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
