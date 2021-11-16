@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="510" Width="360" Background="AliceBlue">
+        Title="VehicleCRUD" Height="510" Width="360" Background="AliceBlue">
 
     <Window.DataContext>
         <local:MainWindowViewModel/>
