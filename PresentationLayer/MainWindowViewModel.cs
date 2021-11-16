@@ -94,11 +94,11 @@ namespace PresentationLayer
                         NewTypeId = type.Description;
                     }
                 }
-                foreach (var Make in VehicleMakeList)
+                foreach (var make in VehicleMakeList)
                 {
-                    if (Make.MakeId == SelectedVehicle.MakeId)
+                    if (make.MakeId == SelectedVehicle.MakeId)
                     {
-                        NewMakeId = Make.Description;
+                        NewMakeId = make.Description;
                     }
                 }
             }
