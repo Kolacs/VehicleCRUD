@@ -2,7 +2,7 @@
 
 ## Information:
 Applications is created with three classes Vehicle, VehicleType and VehicleMake (which stands for which brand of vehicle). 
-Application is using Entity Framework and migrations, the repository pattern and unitOfWork to make the data persisent and to allow for CRUD operations to be demonstated. Application is developed with the MVVM Pattern, but with only one view and one viewmodel these are not in folders that often occure with larger projects. Models is divided in to a diffrent Class Library called Entites.
+Application is using Entity Framework and migrations, the repository pattern and unitOfWork to make the data persisent and to allow for CRUD operations to be demonstrated. Application is developed with the MVVM Pattern, but with only one view and one viewmodel these are not in folders that often occure with larger projects. Models is divided in to a diffrent Class Library called Entites.
 
 ## How-to:
 - Download or clone the repository.
