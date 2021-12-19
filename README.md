@@ -7,7 +7,7 @@ Application is using Entity Framework and migrations, the repository pattern and
 ## How-to:
 - Download or clone the repository.
 - A ```localDb``` must be installed.
-- Migration for creating our database, ```initialDb```, is already in the DataLayer, therefore to create the database you need to set DataLayer as startup project and the default project in Package Manager Console (PMC) to DataLayer. Then you write and run the code ```Update-Database``` in PMC.
+- The database is created by migration, ```initialDb```, which is already in the DataLayer, therefore to create the database you need to set DataLayer as startup project and the default project in Package Manager Console (PMC) to DataLayer. Then you write and run the code ```Update-Database``` in PMC.
 - Now change the startup project to PresentationLayer.
 - You can now run the program!
 
